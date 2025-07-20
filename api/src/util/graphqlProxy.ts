@@ -9,7 +9,6 @@ import { getUserProjectConfig } from './project'
  */
 export async function graphqlProxy(
   fastify: FastifyInstance,
-  _options: never,
   done: HookHandlerDoneFunction
 ) {
   const webConfig = getUserProjectConfig().web
